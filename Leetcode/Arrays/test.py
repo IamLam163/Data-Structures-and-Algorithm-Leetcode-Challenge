@@ -49,7 +49,7 @@ test_cases = [
 # Create an instance of the Solution class
 sol = Solution()
 
-# Perform the tests
+# Perform the tests(test_cases)
 for nums, expected_result in test_cases:
     result = sol.containsDuplicate(nums)
     assert result == expected_result, f"Test failed! Input: {nums}, Expected: {expected_result}, Got: {result}"
