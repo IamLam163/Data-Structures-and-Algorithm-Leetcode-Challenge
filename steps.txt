@@ -40,4 +40,3 @@ Day 61- 90: Refer to the previous resources and start doing problems from trees,
 Day 91 - 100: Understand Computational complexity theory and NP-completeness, Knapsack problem, Travelling salesman problem, SAT problem and so on.
 
 Day 101 -  ∞ : You are now better than most of the CS undergrads. Keep revising the above topics and start competitive programming! Good luck!
-
