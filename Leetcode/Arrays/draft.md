@@ -36,7 +36,7 @@ class Solution:
 
 The second approach was more efficient than the first because the dominant operation was sorting the list and the approach utilised a single for loop. The sort method in python uses the Timsort algorithm which has a time complexity of O(n log n) which is more time efficient than the first approach.
 
-# Complexity
+### Complexity
 
 - Time complexity: **$$O(n log n)$$**
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
@@ -44,6 +44,17 @@ The second approach was more efficient than the first because the dominant opera
 - Space complexity: **$$O(1)$$** This is beause the sorting operation was performed in place i.e no new space was allocated for the List in memory.
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
-Though this approach passed all test cases, a more efficient method to solve this problem is by utilising a Dictionary i,e a Hash map
+Though this approach passed all test cases, a more efficient method to solve this problem is by utilising a Dictionary i,e a Hash map. The time complexity of this approach is $$O(n)$$ and the space complexity is $$O(n)$$.
 
-# Code
+### Optimised Approach
+
+```
+class Solution:
+def containsDuplicate(self, nums: List[int]) -> bool:
+    dict = {}
+    for element in nums:
+        if element in dict:
+            return True
+        dict[element] = True
+    return False
+```
