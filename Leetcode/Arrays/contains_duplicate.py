@@ -1,6 +1,7 @@
 from typing import List
 
 '''
+# Approach 0
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         newhash = {}
@@ -12,7 +13,7 @@ class Solution:
 '''
 
 '''
-Approach 1
+# Approach 1
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         nums.sort()
@@ -21,6 +22,8 @@ class Solution:
                     return True
         return False
 '''
+
+# Approach 2
 
 
 class Solution:
