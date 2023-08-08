@@ -65,18 +65,18 @@ print(results)
 
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        def get_char_count(astr: str) -> tuple:
+        def get_char_count(word: str) -> tuple:
             char_count = [0] * 26
-            for char in astr:
+            for char in word:
                 char_count[ord(char) - ord('a')] += 1
             return tuple(char_count)
 
         anagrams_dict = {}
-        for mystr in strs:
-            char_count_key = get_char_count(mystr)
+        for astr in strs:
+            char_count_key = get_char_count(astr)
             if char_count_key not in anagrams_dict:
                 anagrams_dict[char_count_key] = []
-            anagrams_dict[char_count_key].append(mystr)
+            anagrams_dict[char_count_key].append(astr)
 
         return list(anagrams_dict.values())
 
